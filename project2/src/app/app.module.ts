@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { MatDialogModule} from '@angular/material/dialog';
 import { MatButtonModule} from '@angular/material/button';
+import { AddDialogComponent } from './src/app/components/add-dialog/add-dialog.component';
 
 
 
@@ -20,6 +21,7 @@ import { MatButtonModule} from '@angular/material/button';
     MatButtonModule
   
   ],
+  entryComponents:[AddDialogComponent],
   providers: [],
   bootstrap: [AppComponent],
   
