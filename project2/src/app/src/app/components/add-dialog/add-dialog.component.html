@@ -1,23 +1,27 @@
 <div>
     <div id="dialog_tittle">
-        <span>Agregar Usuario</span>
+        <span>{{dialog_title}}</span>
         
         <img id=close_ico src="../../../../../assets/images/SVG/icono_cerrar.svg" alt="close.ico" (click)="onClickNO()">
     </div>
     <hr>
 
     <div id= "dialog_container">
-        <span>Nombre</span>
-        <input type="text" class="dialog_input">
-        <span>Apellido</span>
-        <input type="text" class="dialog_input">
-        <span>Ubicacion</span>
-        <input type="text" class="dialog_input">
-        <span>Celular</span>
-        <input type="number" class="dialog_input">
-        <div id="add_dialog_button" (click)="onClickNO();">Agregar</div>
-        <div id="cancel_dialog_button" (click)="onClickNO();">Cancelar</div>
-        <button mat-button (mat-dialog-close)="true">SI</button>
-    
-    </div>
+        <div>    
+            <span>Nombre</span>
+            <input type="text" class="dialog_input">
+            <span>Apellido</span>
+            <input type="text" class="dialog_input">
+        </div>
+        <div>
+            <span>Ubicacion</span>
+            <input type="text" class="dialog_input">
+            <span>Celular</span>
+            <input type="number" class="dialog_input">
+        </div>
+        <div id="dialog_buttons_cont">            
+            <span id="add_dialog_button" (click)="onClickNO();">Agregar</span>
+            <div id="cancel_dialog_button" (click)="onClickNO();">Cancelar</div>
+            <button mat-button (mat-dialog-close)="true">SI</button></div>
+        </div>
 </div>
