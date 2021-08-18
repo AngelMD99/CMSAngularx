@@ -1,0 +1,49 @@
+
+@import "../../../../../styles.scss";
+
+
+#dialog_tittle {
+    display: flex;
+    flex-direction: row;
+    size: 20rem;
+    justify-content: space-around;
+}
+
+#close_ico{
+    width: 10px;
+    height: 10px;
+    padding-bottom: 2%;
+    margin-left: 40%;
+  
+}
+
+#close_ico:hover{
+    background-color: $third_color;
+    cursor:pointer;
+}
+
+#add_dialog_button{
+    background-color: $primary_color;
+    border-radius: 3%;
+    color: $secondary_color;
+}
+
+#cancel_dialog_button {
+    color:$primary_color;
+    text-decoration: underline;
+
+}
+
+#dialog_container span{
+    padding-right: 1% 1% 1% 1%;
+}
+
+#dialog_container input {
+    border:none;
+    outline: none;
+    background-color: $third_color;
+    color:$fourth_color;
+    font-size: 1.3rem;
+    width: auto;
+    border-radius:2rem
+}

@@ -4,10 +4,10 @@
  
   <span>Ejercicio CMS</span>
     <div class="spacer"></div>
-    <button class="add-button" >Agregar usuario
-      <span>+</span>
+    <div (click)="openDialog();" class="add-button" >Agregar usuario
+      <img src="../assets/images/SVG/icono_agregar.svg" alt="add_ico">
       
-    </button>
+    </div>
 
 </div>
 
@@ -17,11 +17,10 @@
     <span>Usuarios</span>
   </div>
   
-  <div class="searchbar">
-    <span>Buscador</span>
+  <div  class="searchbar">
+    <input type="text"  id="searcher" placeholder="Buscador">
     <img  src="..//assets/images/SVG/icono_buscar.svg" alt="icono_buscar" >
   </div>
-  
 
 </div>
 

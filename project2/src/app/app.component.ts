@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { resetFakeAsyncZone } from '@angular/core/testing';
+import { MatDialog } from '@angular/material/dialog';
+import { AddDialogComponent } from './src/app/components/add-dialog/add-dialog.component';
 
 
 @Component({
@@ -7,5 +10,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'project2';
+  title = 'EjercicioCRM';
+  constructor (
+    public dialog: MatDialog
+  ){}
+  openDialog(): void{
+    const dialogRef=this.dialog.open(AddDialogComponent,{});
+    dialogRef.afterClosed().subscribe(res => {
+      console.log(res);
+    });
+  }
 }

@@ -9,16 +9,13 @@ $edit_icon_color:#4169e1;
 $background_general:#ECF0F1;
 
 
-
-
-
 @font-face {
     font-family: Poppins-Bold;
     src: url(assets/fonts/Poppins-Bold.otf) format("opentype");
   }
 
 html {
-    font-family: "Poppins-Bold";
+    font-family: "Poppins-Bold"  !important;
     background-color: $background_general;
     border-radius: 4%;
 }
@@ -26,7 +23,6 @@ html {
 .add-button {
     color:$primary_color;
     background-color:$secondary_color;
-    border:$primary_color;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,11 +38,13 @@ html {
 .add-button:hover{
   background-color:$third_color;
   cursor: pointer;
+  border: none;
 }
 
-.add-button span {
-  font-size: 1.5rem;
-  margin-left: 2.5%;
+.add-button img {
+  width: 8%;
+  margin-left: 4%;
+
   
 }
 .spacer {
@@ -89,13 +87,29 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-right: 10%;
+  margin-right: 15%;
   
 }
-.searchbar:hover{
-  background-color: $primary_color;
-  cursor: pointer;
+
+
+.searchbar input{
+  //font-family: "Poppins-Bold"  !important;
+  border:none;
+  outline: none;
+  background-color: $third_color;
+  color:$fourth_color;
+  font-weight: bold;
+  font-size: 1.3rem;
+  width: auto;
+
 }
+
+::placeholder{
+  color:$fourth_color;
+  font-family: "Poppins-Bold";
+}
+
+
 
 #usersbanner span {
   justify-content: space-around;
@@ -117,14 +131,21 @@ html {
 
 
  .searchbar {
-   background-color: $third_color;
-   height: 1.5rem;
-   width: 24rem;
-   padding: 1.5% 1% 1% 3%;
-   display: flex;
-   margin-left: 2%;
-   flex-direction: row;   
-   border-radius: 1.5rem;
+  font-family: "Poppins-Bold"  !important;
+  background-color: $third_color;
+  color:$fourth_color;
+  font-size: 1.5rem;
+  height: 1.5rem;
+  font-weight: bold;
+  width: 24rem;
+  padding: 1.5% 1% 1% 3%;
+  display: flex;
+  margin-left: 2%;
+  flex-direction: row;  
+  justify-items: center; 
+  border-radius: 1.5rem;
+  border: none;
+   
  }
 
  .searchbar span{
@@ -136,12 +157,15 @@ html {
 }
 
  .searchbar img {
-  width: 100%;
-  height: auto;
-  padding-bottom: 2%;
-  margin-left: 40%;
+  //width: 100%;
+  height: 100%;
+  padding-bottom: 10%;
+ 
+}
 
- }
+.searchbar img:hover{
+  cursor: pointer;
+}
 
 #cardcontainer { 
   
