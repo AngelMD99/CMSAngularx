@@ -2,6 +2,10 @@
 @import "../../../../../styles.scss";
 
 
+div{
+    font-weight: bold;
+}
+
 #dialog_tittle {
     display: flex;
     flex-direction: row;
@@ -23,8 +27,10 @@
 }
 
 #add_dialog_button{
+    display: block;
     background-color: $primary_color;
     border-radius: 0.5rem;
+    margin: 0 0 0 0;
     padding: 2% 5% 2% 5%;
     color: $secondary_color;
     margin-top: 5%;
@@ -72,7 +78,8 @@
 
 #dialog_buttons_cont{
     display: flexbox;
-    flex-direction: column;
+    background-color: violet;
+    flex-direction: row;
     align-items: center;
     margin-top: 2rem;
 }

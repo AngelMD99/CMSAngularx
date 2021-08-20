@@ -28,19 +28,16 @@
   Card Contacts Here
   <div class="contactcard" >
     <div class="contactname">Card name here
-      <img  class="editicon" src="../assets/images/SVG/icono_editar.svg" alt="user_photo" >
+      <img  (click)="openDialog('Editar Usuario');" class="editicon" src="../assets/images/SVG/icono_editar.svg" alt="user_photo" >
     </div>
-    <div class="photocontainer">
-        <img src="" alt="Photo Here">
-    </div>
-    
-    <p>City Here</p>
-    <p>Phone number here</p>
+    <div class="photo_info_separator">
+        <div class="photocontainer">
+          <img src="" alt="Photo Here">
+        </div>
+        <div class="city_phone">    
+          City Here<br>
+          Phone number here
+        </div>
+    </div>  
   </div>
 
-
-
-
-</div>
-
-</html>

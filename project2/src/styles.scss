@@ -10,15 +10,23 @@ $background_general:#ECF0F1;
 
 
 @font-face {
-    font-family: Poppins-Bold;
-    src: url(assets/fonts/Poppins-Bold.otf) format("opentype");
+    font-family: Poppins;
+    src: url(assets/fonts/Poppins-Regular.ttf) format("opentype");
   }
 
-html {
-    font-family: "Poppins-Bold"  !important;
+@font-face {
+    font-family: Poppins;
+    src: url(assets/fonts/Poppins-Bold.otf) format("opentype");
+    font-weight: bold;
+  }
+
+  html {
+    font-family: "Poppins";
     background-color: $background_general;
     border-radius: 4%;
 }
+
+
 
 .add-button {
     color:$primary_color;
@@ -81,6 +89,7 @@ html {
 
 #usersbanner {
   padding-top: 1%; 
+  font-weight: bold;
   padding-left: 2%; 
   height: 2rem;
   width: 2rem;
@@ -106,7 +115,6 @@ html {
 
 ::placeholder{
   color:$fourth_color;
-  font-family: "Poppins-Bold";
 }
 
 
@@ -178,22 +186,28 @@ html {
 }
 
 .contactcard{
-  border:solid;
+  
   border-color: $fourth_color;
   border-radius: 8%;
-  width: 12rem;
+  width: 15.9rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   background-color: $secondary_color;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1 px 2px rgba(0,0,0,0.24);
 }
 
 .contactname {
   color: $secondary_color;
   background-color: $primary_color;
-  border-radius: 8%;
+  font-weight: bold;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
   display: flex;
-  justify-content: space-around;
+  width: 14rem;
+  justify-content: space-between;
+  padding: 6% 10% 6% 2%
+
 }
 
 .editicon{
@@ -201,6 +215,8 @@ html {
   height: 100%;
   background-color: $edit_icon_color;
   border-radius: 0.2rem;
+  
+  
   padding: 1.7% 1.7% 1.7% 1.7%;
   
 
@@ -210,6 +226,25 @@ html {
     background-color: $third_color;
     cursor: pointer;
 }
+
+.photocontainer{
+  margin:5% 0% 0 5%;
+}
+
+
+.photo_info_separator{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: lighter !important;
+  
+  //background-color: rosybrown;
+}
+
+.city_phone{
+  padding-top: 12%;
+}
+
 // svg.material-icons {
 //   height: 24px;
 //   width: auto;
