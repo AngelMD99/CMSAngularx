@@ -19,8 +19,8 @@ export class AppComponent {
     public dialog: MatDialog
   ){}
   
-  openDialog(message:string): void{
-    dialog_title=message;
+  openDialog(): void{
+    
     const dialogRef=this.dialog.open(AddDialogComponent,{});
     dialogRef.afterClosed().subscribe(res => {
       console.log(res);

@@ -6,6 +6,8 @@ import { MatDialogModule} from '@angular/material/dialog';
 import { MatButtonModule} from '@angular/material/button';
 import { AddDialogComponent } from './components/add-dialog/add-dialog.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ComponentsModule } from './components/components.module';
+
 
 
 
@@ -20,7 +22,9 @@ import { AppRoutingModule } from './app-routing.module';
     BrowserAnimationsModule,
     MatDialogModule,
     MatButtonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ComponentsModule
+
   
   ],
   entryComponents:[AddDialogComponent],
