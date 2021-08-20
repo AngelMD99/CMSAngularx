@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { resetFakeAsyncZone } from '@angular/core/testing';
 import { MatDialog } from '@angular/material/dialog';
-import { AddDialogComponent } from './src/app/components/add-dialog/add-dialog.component';
+import { AddDialogComponent } from './components/add-dialog/add-dialog.component';
 
 var dialog_title:string;
 
