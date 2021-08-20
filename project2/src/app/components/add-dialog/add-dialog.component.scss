@@ -1,8 +1,13 @@
 
 @import "../../../styles.scss";
 
-div{
+#popUp {
     font-weight: bold;
+    display: table;
+    padding: 0%;
+}
+#name_input_grouper, #location_input_grouper{
+    padding: 0% 0% 0% 0%;
 }
 
 #dialog_tittle {
@@ -15,7 +20,6 @@ div{
 #close_ico{
     width: 10px;
     height: 10px;
-    padding-bottom: 2%;
     margin-left: 40%;
   
 }
@@ -28,9 +32,10 @@ div{
 #add_dialog_button{
     display: block;
     background-color: $primary_color;
+    height: rem;
     border-radius: 0.5rem;
     margin: 0 0 0 0;
-    padding: 2% 5% 2% 5%;
+    padding: 0.8rem 2rem 0.8rem 2rem;
     color: $secondary_color;
     margin-top: 5%;
 }
@@ -45,7 +50,9 @@ div{
     color:$primary_color;
     text-decoration: underline;
     font-weight: lighter;
-    padding-top: 3%;
+    padding: 3% 0% 0% 18%;
+    align-self: center;
+    align-content: center;
     
 
 }
@@ -64,21 +71,71 @@ div{
 #dialog_container input {
     border:none;
     outline: none;
+    margin-bottom:6%;
     background-color: $third_color;
     color:$fourth_color;
     font-size: 1.3rem;
     width: auto;
-    border-radius:2rem
+    height: 2.5rem;
+    border-radius:2rem 
+    
+    
 }
+.input_spacer{
+    margin-right: 2rem;
+    margin-right: 2rem;
+    width: 4rem;
 
+}
 #dialog_container div{
     padding: 0 2rem 0 2rem 0;
 }
 
+#grouper{
+    padding: 0% 38% 0% 38%;
+}
+
 #dialog_buttons_cont{
-    display: flexbox;
-    background-color: violet;
+    
+    
     flex-direction: row;
     align-items: center;
     margin-top: 2rem;
+    align-self: center;
+    vertical-align: auto;
 }
+
+#name_grouper{
+    justify-content: left;
+    display: flex;
+    padding: 0% 0% 0% 0%;
+    margin-bottom: 2%;
+
+    span {
+        align-self: center;
+        padding: 0% 21% 0%  0%;
+    }
+
+}
+
+
+#address_grouper{
+
+    display: flex;
+    justify-content: left;
+    padding: 0% 0 0% 0%;
+    margin-bottom: 2%;
+
+    span {
+        align-self: center;
+        padding: 0% 38% 0%  0%;
+    }
+
+}
+
+#gender options{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+

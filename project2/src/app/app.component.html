@@ -4,7 +4,7 @@
  
   <span>Ejercicio CMS</span>
     <div class="spacer"></div>
-    <div (click)="openDialog();"  class="add-button" >Agregar usuario
+    <div  (click)="openDialog('Agregar Usuario');"  class="add-button" >Agregar usuario
       <img src="../assets/images/SVG/icono_agregar.svg" alt="add_ico">
       
     </div>
@@ -24,11 +24,10 @@
 
 </div>
 
-<div id="cardcontainer">
-  Card Contacts Here
-  <div class="contactcard" >
-    <div class="contactname">Card name here
-      <img  (click)="openDialog();" class="editicon" src="../assets/images/SVG/icono_editar.svg" alt="user_photo" >
+<div class="cardcontainer" >
+  <div class="contactcard" *ngFor="let name of names" >
+    <div class="contactname">  {{name}}
+      <img  (click)="openDialog('Editar Usuario');" class="editicon" src="../assets/images/SVG/icono_editar.svg" alt="user_photo" >
     </div>
     <div class="photo_info_separator">
         <div class="photocontainer">

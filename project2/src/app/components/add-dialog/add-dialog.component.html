@@ -1,27 +1,46 @@
-<div>
+<div id="popUp">
     <div id="dialog_tittle">
-        <span></span>
-        
+        <span></span>        
         <img id=close_ico src="../../../../../assets/images/SVG/icono_cerrar.svg" alt="close.ico" (click)="onClickNO()">
     </div>
+    <br>
     <hr>
+    <br>
+    <br>
 
-    <div id= "dialog_container">
-        <div>    
+    <div id= "dialog_container" >
+        <div id="name_grouper">    
             <span>Nombre</span>
-            <input type="text" class="dialog_input">
+            <span></span>
             <span>Apellido</span>
+        </div>
+        <div id="name_input_grouper">
+            <input type="text" class="dialog_input">
+            <span class="input_spacer"></span>
             <input type="text" class="dialog_input">
         </div>
-        <div>
+        <div id="address_grouper">    
             <span>Ubicacion</span>
-            <input type="text" class="dialog_input">
             <span>Celular</span>
+        </div>
+        <div id="location_input_grouper">
+            <input type="text" class="dialog_input">
+            <span class="input_spacer">      </span>
             <input type="number" class="dialog_input">
         </div>
-        <div id="dialog_buttons_cont">            
-            <span id="add_dialog_button" (click)="onClickNO();">Agregar</span>
-            <div id="cancel_dialog_button" (click)="onClickNO();">Cancelar</div>
-            <button mat-button (mat-dialog-close)="true">SI</button></div>
+        <div id="gender options"></div>
+               
+            <input type="radio" id="male_gender" name="gender" value="Hombre">
+            <label for="male_gender">Hombre</label>
+            <input type="radio" class="gender_input" name="gender" value="Mujer"> Mujer
         </div>
+    <div id="grouper">
+
+        <div id="dialog_buttons_cont" >            
+            <span id="add_dialog_button" (click)="onClickNO();">Agregar</span>
+            <span id="cancel_dialog_button" (click)="onClickNO();">Cancelar</span>
+    </div>
+</div>
+    
+
 </div>

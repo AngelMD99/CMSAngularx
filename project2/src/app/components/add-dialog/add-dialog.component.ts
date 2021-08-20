@@ -8,13 +8,14 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
   styleUrls: ['./add-dialog.component.scss']
 })
 export class AddDialogComponent implements OnInit {
-  @Input() PopTitle:string = "";
+  @Input() recibidodePadre:string = "";
 
   constructor(
     public dialogRef: MatDialogRef<AddDialogComponent>, @Inject(MAT_DIALOG_DATA) public message:string
   ) { }
 
   ngOnInit(): void {
+    console.log(this.recibidodePadre)
   }
 
   onClickNO():  void{
