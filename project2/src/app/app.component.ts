@@ -16,7 +16,7 @@ export class AppComponent {
   title = 'EjercicioCRM';
   recibidodePadre: any;
   padreForm: FormControl = new FormControl();
-  names= new Object();
+  names: any;
   
 
   constructor (
@@ -24,13 +24,27 @@ export class AppComponent {
     
   ){ this.names = [
 
-    'Criss',
-    'Carlos',
-    'Gonzalo',
-    'Lucas',
-    'Amanda',
-    'Luis',
-    'Eduardo'
+    {
+    full_name: 'Criss',
+    location: 'Chihuahua',
+    gender: 'M',
+    phone: '6561237899'
+    },
+            
+    {    
+    full_name: 'Loreta',
+    location: 'Juarez',
+    gender: 'F',
+    phone: '6561237899'},
+
+    {
+    full_name: 'Azrael',
+    location: 'Chihuahua',
+    gender: 'M',
+    phone: '6561237899'
+}
+     
+     
   
   ];}
   

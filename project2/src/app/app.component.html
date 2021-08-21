@@ -1,5 +1,4 @@
-<html>
-  
+<html>  
 <div class="toolbar" >
  
   <span>Ejercicio CMS</span>
@@ -25,17 +24,54 @@
 </div>
 
 <div class="cardcontainer" >
-  <div class="contactcard" *ngFor="let name of names" >
-    <div class="contactname">  {{name}}
+  <div class="contactcard" *ngFor="let n of names; let i=index " >
+      <div class="contactname">{{names[i].full_name}} 
       <img  (click)="openDialog('Editar Usuario');" class="editicon" src="../assets/images/SVG/icono_editar.svg" alt="user_photo" >
     </div>
     <div class="photo_info_separator">
         <div class="photocontainer">
-          <img src="" alt="Photo Here">
+          <img  src="" alt="Photo Here">
         </div>
         <div class="city_phone">    
-          City Here<br>
-          Phone number here
+          {{names[i].location}}<br>
+          {{names[i].phone}}
         </div>
     </div>  
   </div>
+<html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
