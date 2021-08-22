@@ -1,0 +1,184 @@
+
+$primary_color: #3880FF;
+$secondary_color: #f8f8ff;
+$third_color:#dcdcdc;
+$fourth_color:#000000;
+$fifth_color:#f5f5f5;
+$edit_icon_color:#4169e1;
+$background_general:#ECF0F1;
+
+
+@font-face {
+    font-family: Poppins;
+    src: url(assets/fonts/Poppins-Regular.ttf) format("opentype");
+  }
+
+@font-face {
+    font-family: Poppins;
+    src: url(assets/fonts/Poppins-Bold.otf) format("opentype");
+    font-weight: bold;
+  }
+
+  html {
+    font-family: "Poppins" !important;
+    background-color: $background_general;
+    border-radius: 4%;
+
+
+}
+
+::placeholder{
+    font-family: "Poppins";
+    font-weight: bold;
+    color:$fourth_color
+}
+
+#tittle_bar{
+    
+    background-color: $primary_color;
+    display: flex;
+    flex-direction: row;
+    padding: 0% 4% 2% 0%;
+    
+
+    
+}
+
+
+
+.navbar-brand{
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 2%;
+    padding-left: 14%;
+    &:visited{
+        color:$secondary_color;
+
+        
+    }
+    
+}
+
+
+.add-button {
+    color:$primary_color;
+    background-color:$secondary_color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    height: 2.1rem;
+    width: 10rem;
+    border-radius: 0.5rem !important;
+    border: none;
+    margin-top: 1.5%;
+    margin-right: 8%;
+    
+}
+
+.add-button:hover{
+  background-color:$third_color;
+  cursor: pointer;
+  border: none;
+}
+
+.add-button img {
+  width: 8%;
+  margin-left: 4%;
+
+  
+}
+
+#spacer_tittle_bar{
+    flex:1;
+    margin-right: 40%;
+  }
+
+#search_bar{
+  display: flex;  
+  flex-direction: row;
+  font-weight: bold;
+  justify-content: space-around;
+  margin-top: 1.5%;
+  
+}
+
+#spacer_users_bar{
+    margin: 0 30% 0 2%;
+}
+
+#usersbanner {
+    padding-top: 1%; 
+    font-weight: bold;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 0%;
+    margin-right: 22%;
+
+    img {
+        //width: 100%;
+        height: 100%;
+        padding-top: 5.5%;
+        margin-right: 12%;
+    }
+
+  }
+  
+
+#input_container {
+    background-color: $background_general;
+    height: 1.5rem;
+    font-weight: bold;
+    width: 24rem;    
+    display: flex;
+    
+    flex-direction: row;  
+    justify-items: center; 
+    
+    img {
+        //width: 100%;
+        height: 100%;
+        padding-top: 2.5%;
+    }
+}
+app-form-search{
+    padding: auto;
+}
+
+
+.container {
+    margin-top: 4rem;
+    padding: 0% 2% 0% 2%;
+}
+
+.card{
+    box-shadow:0 1px 3px rgba(0,0,0,.12),
+               0 1px 2px rgba(0,0,0,.24);
+    box-sizing:border-box;
+    background-color: #fff;
+    max-width: 529px;
+    margin-top: 10 0px;
+    transition: all 0.2 ease-in-out;
+    &:hover{
+        box-shadow:0 5px 5px rgba(0,0,0,.19),
+        0 6px 6px rgba(0,0,0,.24);
+        cursor: pointer;
+
+    }
+    img{
+        opacity: 0.7;
+        width: 100%;
+        transition: opacity 0.7;
+
+        &:hover{
+            opacity: 1;
+        }
+    }
+    .card-inner {
+        padding: 10px;
+    }
+}

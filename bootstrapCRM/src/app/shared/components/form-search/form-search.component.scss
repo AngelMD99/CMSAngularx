@@ -1,0 +1,22 @@
+@import "../../../../styles.scss";
+input {
+    margin-top: 0%;
+    width: 26rem;
+    height: 2.5rem;
+    border-radius: 4rem;
+    border:none;
+    outline: none;
+    background-color: $third_color;
+    color:$fourth_color;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding-left: 8%;
+    
+
+    &:hover{
+        cursor: pointer;
+        background-color: $primary_color;
+        opacity: 12%;
+    }
+    
+}

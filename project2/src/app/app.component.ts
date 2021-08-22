@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, Inject,Input, Output, EventEmitter } from '@angular/core';
 import { resetFakeAsyncZone } from '@angular/core/testing';
 import { FormControl } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
@@ -14,6 +14,7 @@ var dialog_title:string;
 
 export class AppComponent {
   title = 'EjercicioCRM';
+  @Output() salida= new EventEmitter<string>();
   recibidodePadre: any;
   padreForm: FormControl = new FormControl();
   names: any;
